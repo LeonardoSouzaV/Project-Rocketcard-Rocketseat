@@ -204,6 +204,7 @@ footer {
     left: 12%;
   }
   footer {
-    margin-left: 7rem;
+    margin-left: 6rem;
+    margin-bottom: 1rem;
   }
 }
