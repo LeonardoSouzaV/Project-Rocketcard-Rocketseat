@@ -4,14 +4,14 @@ function ChangeCardColor() {
   document.querySelector("div.card-color").style.backgroundColor = borderColor
 }
 
-const url = "https://api.github.com/users/LeonardoSouzaV"
+const user = "LeonardoSouzaV"
 
-function GetDatasFromAPIGitHub(url) {
-  axios
-    .get(url)
-    .then((response) => {
-      const data = response.data
+function GetDatasFromAPIGitHub(user) {
+  const profile = `https://api.github.com/users/${user}`
 
+  fetch(profile)
+    .then((response) => response.json())
+    .then((data) => {
       document.querySelector("a#github-user").textContent = data.login
       document.querySelector("span#followers").textContent = data.followers
       document.querySelector("span#following").textContent = data.following
@@ -21,7 +21,15 @@ function GetDatasFromAPIGitHub(url) {
       document.querySelector("span#company").textContent = data.company
       document.querySelector("img#github-user-photo").src = data.avatar_url
     })
-    .catch((error) => prompt.error(error))
 }
 
-GetDatasFromAPIGitHub(url)
+function newCard() {
+  const userInput = prompt("Enter your GitHub user name:")
+  if (userInput) {
+    GetDatasFromAPIGitHub(userInput)
+  } else {
+    GetDatasFromAPIGitHub(user)
+  }
+}
+
+window.onload = newCard()

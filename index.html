@@ -17,7 +17,6 @@
   </head>
   <body>
     <div id="app">
-     
       <main>
         <div class="card-color">
           <div class="card-app">
@@ -194,13 +193,18 @@
             </footer>
           </div>
         </div>
-        <div class="color-change">
+        <aside>
           <h3>Customize Rocketcard</h3>
-          <button onclick="ChangeCardColor()">Change background</button>
-        </div>
+          <div class="color-change">
+            <button onclick="ChangeCardColor()">Change background</button>
+          </div>
+          <div class="card-change">
+            <button onclick="newCard()">Generate my card</button>
+          </div>
+        </aside>
       </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="index.js"></script>
   </body>
 </html>

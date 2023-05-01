@@ -132,24 +132,31 @@ footer {
   margin: 0 0 0 16rem;
 }
 
-.color-change h3 {
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+aside h3 {
   font-size: 2rem;
   font-weight: normal;
 }
 
-.color-change button {
+.color-change button,
+.card-change button {
   background-color: var(--button-bg-fc);
   border: 0.2rem solid var(--button-border-fc);
   border-radius: 1.5rem;
   padding: 1.8rem 4.6rem;
-
   cursor: pointer;
-  margin-top: 5rem;
 
   transition: 0.8s;
 }
 
-.color-change button:hover {
+.color-change button:hover,
+.card-change button:hover {
   background-color: var(--button-bg-hover);
   border: 0.2rem solid var(--button-bg-fc);
   transform: scale(1.05);
@@ -161,6 +168,10 @@ footer {
 @media (max-width: 768px) {
   main {
     flex-direction: column;
+    gap: 6rem;
+  }
+  aside {
+    gap: 2rem;
   }
 }
 
@@ -171,7 +182,7 @@ footer {
     margin: 1rem auto;
   }
   main {
-    gap: 3rem;
+    gap: 1.5rem;
   }
   .user {
     padding: 3rem 2.5rem 1.5rem;
@@ -184,12 +195,13 @@ footer {
   .card-app img {
     left: 15%;
   }
-  .color-change button {
-    margin-top: 2rem;
-  }
+
   footer {
     margin-left: 7rem;
     margin-bottom: 1rem;
+  }
+  aside {
+    gap: 1.5rem;
   }
 }
 
