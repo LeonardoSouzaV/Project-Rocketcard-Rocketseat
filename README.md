@@ -15,8 +15,8 @@
 <br>
 
 <p align="center">
-  <img alt="Rocketcard" src=".github\README Rocketcard (2).png" width="100%">
   <img alt="Rocketcard" src=".github\README Rocketcard (1).png" width="100%">
+  <img alt="Rocketcard" src=".github\README Rocketcard (2).png" width="100%">
 </p>
 
 ## 🚀 Technologies
@@ -25,20 +25,19 @@ This project was developed with the following technologies:
 
 - HTML and CSS;
 - JavaScript and API consumption;
-- Axios library
 - Figma
 
 ## 💻 Project
 
-Rocketcard was developed to study the consumption and use of API with Axios library. In this project we consume the API from Github to create a card with all informations of the user. Also this aplication have a button to change the color of the border card. Among the most common themes are:
+Rocketcard was developed to study the consumption and use of API. In this project we consume the API from Github to create a card with all informations of the user. Also this aplication have a button to change the color of the border card and you can put your user on the card. Among the most common themes are:
 
 - Data and table structure in HTML;
 - Mobile First;
 - Animations with CSS;
-- Customizer button;
+- Customizer and Add button;
 - Functions and refactoring in JavaScript;
 - DOM manipulation;
-- API consumption with Axios;
+- API consumption;
 
 ## 🗒️ License
 
